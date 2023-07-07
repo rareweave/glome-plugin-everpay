@@ -1,0 +1,13 @@
+{
+  "name": "glome-plugin-everpay",
+  "version": "1.0.0",
+  "description": "The glome plugin for everPay",
+  "main": "index.js",
+  "repository": "https://github.com/rareweave/glome-plugin-everpay",
+  "author": "Angrymouse <nik@hns.is>",
+  "license": "GPL0",
+  "private": false,
+  "dependencies": {
+    "everpay": "^0.6.3"
+  }
+}
