@@ -7,7 +7,7 @@ module.exports = {
         return {
             async readTxById(id){
                 let dataFromEverpay = await everpay.txByHash(id)
-                if (!dataFromEverpay || dataFromEverpay.action != "transfer" || dataFromEverpay.internalStatus !='success') {
+                if (!dataFromEverpay || dataFromEverpay.action != "transfer" || dataFromEverpay.internalStatus != '{"status":"success"}') {
                     return null
                 }
                 return {
