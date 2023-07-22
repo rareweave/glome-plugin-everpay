@@ -1,10 +1,10 @@
 const Everpay = require('everpay')
 
-module.exports={
+module.exports = {
+    id: "everpay",
     setup:async()=>{
         const everpay = Everpay.default?new Everpay.default():new Everpay()
         return {
-            id:"everpay",
             async readTxById(id){
                 let dataFromEverpay = await everpay.txByHash(id)
                 if (!dataFromEverpay || dataFromEverpay.action != "transfer" || dataFromEverpay.internalStatus !='success') {
